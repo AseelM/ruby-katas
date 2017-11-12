@@ -9,3 +9,5 @@ elsif (2..(number-1)).to_a.any? {|x| number % x == 0} || number == 0
 else
   puts "#{number} is a prime number!"
 end
+
+# any? method passes each element of the collection to the given block. The method returns true if the block ever returns a value other than false or nil. If the block is not given, Ruby adds an implicit block of {|obj| obj} (that is any? will return true if at least one of the collection members is not false or nil.
